@@ -8,4 +8,6 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
     integrityshield.io/signatureResource: "true"
-data: {}
+data:
+  signature: {{ .Values.signature }}
+  message: {{ .Values.message }}
